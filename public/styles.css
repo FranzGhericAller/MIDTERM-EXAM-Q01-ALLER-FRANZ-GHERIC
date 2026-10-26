@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+    color: #000;
+    background: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+header,
+main > section {
+    margin-bottom: 20px;
+    padding: 16px;
+    border: 1px solid #000;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+#add-form label {
+    min-width: 110px;
+}
+
+input {
+    min-height: 30px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 0;
+    font: inherit;
+}
+
+#add-form input {
+    width: 220px;
+    margin-right: 12px;
+}
+
+button {
+    min-height: 30px;
+    padding: 5px 10px;
+    color: #000;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus-visible {
+    color: #fff;
+    background: #000;
+}
+
+#add-form p {
+    width: 100%;
+    margin: 4px 0 0;
+}
+
+#message {
+    min-height: 18px;
+}
+
+.item-row {
+    margin: 8px 0;
+    padding: 12px;
+    border: 1px solid #000;
+}
+
+.item-row p {
+    margin: 5px 0;
+}
+
+.item-status {
+    font-weight: bold;
+}
+
+.delete-button:disabled {
+    color: #555;
+    border-color: #777;
+    cursor: not-allowed;
+}

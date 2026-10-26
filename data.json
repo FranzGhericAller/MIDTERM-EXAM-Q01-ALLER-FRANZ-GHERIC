@@ -1,0 +1,18 @@
+[
+  {
+    "id": 2,
+    "item_name": "Student ID card",
+    "category": "ID card",
+    "location_found": "LB468",
+    "date_found": "2026-10-26",
+    "claimed": true
+  },
+  {
+    "id": 3,
+    "item_name": "Iphone",
+    "category": "Electronics",
+    "location_found": "Bunzel",
+    "date_found": "2026-10-14",
+    "claimed": false
+  }
+]

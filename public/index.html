@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Campus Lost &amp; Found</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Campus Lost &amp; Found</h1>
+        <p>Manage items found around campus.</p>
+    </header>
+
+    <main>
+        <section aria-labelledby="search-heading">
+            <h2 id="search-heading">Find an item by ID</h2>
+            <form id="search-form">
+                <label for="search-id">Item ID</label>
+                <input id="search-id" name="id" type="number" min="1" required>
+                <button type="submit">Search</button>
+                <button id="show-all" type="button">Show all items</button>
+            </form>
+        </section>
+
+        <section aria-labelledby="add-heading">
+            <h2 id="add-heading">Add a found item</h2>
+            <form id="add-form">
+                <label for="item-name">Item name</label>
+                <input id="item-name" name="item_name" type="text" required maxlength="100">
+
+                <label for="category">Category</label>
+                <input id="category" name="category" type="text" required maxlength="60">
+
+                <label for="location-found">Location found</label>
+                <input id="location-found" name="location_found" type="text" required maxlength="120">
+
+                <label for="date-found">Date found</label>
+                <input id="date-found" name="date_found" type="date" required>
+
+                <button type="submit">Add item</button>
+                <p>New items are automatically marked UNCLAIMED.</p>
+            </form>
+        </section>
+
+        <section aria-labelledby="items-heading">
+            <h2 id="items-heading">Items</h2>
+            <p id="message" role="status" aria-live="polite"></p>
+            <div id="items-list" aria-live="polite"></div>
+        </section>
+    </main>
+</body>
+</html>
